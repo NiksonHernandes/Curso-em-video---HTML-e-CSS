@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores degrade em css</title>
+    <link rel="shortcut icon" href="../IMAGENS/FAVICON-PADRAO-NIKSON.ico" type="image/x-icon">
+
+    <style>
+
+        *{ /*config global*/
+            height: 100%; /*altura*/
+        }
+
+        body{
+
+            /*para fazer degrade em css, usa o backgound-image: linear-gradient()*/
+            background-image: linear-gradient(to bottom, #0DFD20 30%,#41E30B, #A0FA19 , #D8E30B, #FDE80D);/*indica a direção e quantas cores vc quiser, de branco para blue. Para direita, esquerda, cima, baixo. 
+            Pode usar também:
+            -90deg -> em graus
+            MUDAR O linear-gradient PARA radial-gradient e colcoar: circle, ;*/
+            
+            background-attachment: fixed; /*background - fundo fixo conforme a rolagem - fixo*/
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Testando Gradientes</h1>
+
+</body>
+</html>

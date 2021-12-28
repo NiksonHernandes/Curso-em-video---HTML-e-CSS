@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="shortcut icon" href="../Módulo 1 - HTML/IMAGENS/FAVICON-PADRAO-NIKSON.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <h1>Inserindo vídeos de forma EXTERNA </h1>
+
+    <h2>Vídeo do YouTube:</h2>
+    <p>Clique em compartilhar e vá em 'incorporar' e dar um CTRL+V.</p>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
+
+    <h1>Inserindo vídeos direto do VIMEO</h1>
+
+    <iframe src="https://player.vimeo.com/video/114695042?h=106ea0e75e" width="500" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+    <hr>
+
+    <h1>Inserindo vídeos hospedados LOCALMENTE - PAGA HOSPEDAGEM DE VÍDEO, TOME CUIDADO</h1>
+
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!--VÍDEOS INDIVIDUAIS, NÃO RECOMENDADDO
+    <video src="VIDEOS/VIDEO-TESTE-2-CONVERTIDOPARAWEB.m4v" width="250" controls></video>-->
+
+    <video width="300"  poster="./IMAGENS/CAPA-VIDEO.png" controls loop>
+        <!--coloca POSTER="" e adiciona sua imagem de capa-->
+
+        <source src="./VIDEOS/VIDEO-TESTE-2-CONVERTIDOPARAWEB.m4v" type="video/mp4">
+        <source src="VIDEOS/VIDEO-TESTE.mp4" type="video/mp4">
+        <source src="VIDEOS/VIDEO-TESTE.webm" type="video/webm">
+        <source src="VIDEOS/VIDEO-TESTE.ogv" type="video/ogv">
+
+        <!--VAI TENTANDO NA SEQUENCIA, ASSIM COMO AS IMAGENS, SE O 1º N FOR COMPATIVEL ELE VAI PRO SEGUNDA E ASSIM POR DIANTE-->
+       
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.<p>
+    
+    </video>
+
+</body>
+</html>

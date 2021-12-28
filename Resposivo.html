@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Resposividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*resposividade*/
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img{
+            /*resposividade na imagem*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Resposividade </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illum officiis animi iusto beatae earum et, a omnis nobis unde aspernatur veniam consequuntur libero quod mollitia tempora ullam itaque tempore?çLorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic laborum maiores repellendus accusantium repudiandae aliquid deleniti, necessitatibus laboriosam ipsum assumenda, obcaecati voluptate sint veritatis eos, atque commodi dolore quisquam!Lorem
+        </p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="DESAFIO-SiteDoAndroid/imagens/irina-blok-pq.jpg"> <!--Antes de 600px, vc vai carregar a pqeuena, dps tu carrega a maior-->
+            <img src="DESAFIO-SiteDoAndroid/imagens/irina-blok.jpg" alt="Irinia">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illum officiis animi iusto beatae earum et, a omnis nobis unde aspernatur veniam consequuntur libero quod mollitia tempora ullam itaque tempore?çLorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic laborum maiores repellendus accusantium repudiandae aliquid deleniti, necessitatibus laboriosam ipsum assumenda, obcaecati voluptate sint veritatis eos, atque commodi dolore quisquam!Lorem
+        </p>
+    </main>
+    
+</body>
+</html>

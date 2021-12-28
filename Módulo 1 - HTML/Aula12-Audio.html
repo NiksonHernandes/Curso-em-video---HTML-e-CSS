@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+    <link rel="shortcut icon" href="../Módulo 1 - HTML/IMAGENS/FAVICON-PADRAO-NIKSON.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+        aumente o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="./IMAGENS/FOTO-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./IMAGENS/FOTO-M.png" type="image/png">
+        <img src="./IMAGENS/FOTO-G.png" alt="Imagem flexível">
+    </picture>
+    
+    <hr>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Como reproduzir audios em HTML5.</p>
+
+    <!--
+        EXEMPLO DE MP3, AUDIO ÚNICO!
+    <audio src="AUDIOS/AUDIO-TESTE-Big Bird's Date Night - Twin Musicom.mp3" controls autoplay></audio>
+        autoplya pra reproduzir
+        controls para aparecer os controles
+        MP3, WAV e OGG
+    --->
+    
+      <p>Ouça a música Big Bird's Date Night - Twin Musicom:</p>
+    <audio preload="metadata" controls loop>
+      
+        <!--preload - auto -> só vai considerar que o site q acabou de carregar qnd o áudio todo carregar(PERIGOSO)
+        preload - metadata -> carrega só alguns arquivos do áudio, como data, duracação 
+        preload - none -> não carrega absolutamente nada, só qnd o usuário clicar.-->
+
+        <!--EM MP3-->
+        <source src="./AUDIOS/AUDIO-TESTE-Big Bird's Date Night - Twin Musicom.mp3" type="audio/mpeg"> <!--SOURCE SRC-->
+
+        <!--EM OGG-->
+        <source src="./AUDIOS/AUDIO-TESTE-Big Bird's Date Night - Twin Musicom.ogg" type="audio/ogg"> <!--em type, tem lá no msm site das imagens, cada um é um tipo-->
+
+        <!--EM WAV-->
+        <source src="./AUDIOS/AUDIO-TESTE-Big Bird's Date Night - Twin Musicom.wav" type="audio/wav">
+
+        <!--ELE TENTA CARREGAR NA ORDEM, SE N CONSEGUIR CARREGAR EM MP3, TENTA OGG, DPS TENTA WAV-->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="AUDIOS/AUDIO-TESTE-Big Bird's Date Night - Twin Musicom.mp3">clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+
+    <p>
+    <br> &copy; Big Bird's Date Night de Twin Musicom é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons. 
+    <br>
+    <a href="https://creativecommons.org/licenses/by/4.0/  " target="_blank" rel="external"> Clique aqui </a> para acessar o CreativeCommons
+    <br> 
+    <a href=" http://www.twinmusicom.org/ " target="_blank" rel="external">Clique aqui </a> para acessar o site so artista.
+    </p>
+    
+</body>
+</html>

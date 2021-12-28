@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam sozinhas</title>
+    <link rel="shortcut icon" href="../Módulo 1 - HTML/IMAGENS/FAVICON-PADRAO-NIKSON.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+        aumente o tamanho do seu navegador.
+    </p>
+
+    <picture><!--Permite que sejam colocadas várias imagens-->
+
+        <source media="(max-width: 750px)" srcset="./IMAGENS/FOTO-P.png" type="image/png">
+        <!--A menor tem q ficar em cima das outras-->
+        <source media="(max-width: 1050px)" srcset="./IMAGENS/FOTO-M.png" type="image/png">
+        <!--min-width - largura mínima/ muda pra max-width
+        NÃO ESQUECE DE COLOCAR O PNG EM TYPE='IMAGE/PNG'-->
+
+        <!--min-width = por padrão ele vai carregar a imagem em img, mas se por acaso o cara estiver no cell e o ele tiver menos de 1000px (é o tamanho da imagem G, q a gnt conf no GIMP),a  imagem, ele vai carregar a imagem M 
+        
+        em outras palavras,
+        se ele for menor que 1000px, o navegador/interface do usuário, ele vai carregar a foto M-->
+
+        <img src="./IMAGENS/FOTO-G.png" alt="Imagem flexível">
+
+        <!--
+            A IMAGEM BASE, IMAGEM PADRÃO, SEMPRE FICA EMBAIXO, ACIMA DELA VAI COLOCANDO OS SOURCES NA ORDEM QUANTO MENOR A IMAGEM MAIS ALTO ELA FICA!! 
+        -->
+        
+    </picture>
+    
+</body>
+</html>

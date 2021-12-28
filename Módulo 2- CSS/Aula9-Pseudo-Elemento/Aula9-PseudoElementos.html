@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElemento</title>
+    <style>
+
+        /*
+        No pseudoelemento, mexem diretamente no conteúdo periférico do elemento, pode ser um elemento id, class, elementos. Usamos -> ::
+        */
+
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a{
+            color: red;
+            text-decoration: none; /*tira todas as decorações padrões*/
+            font-weight: bold;
+        }
+        
+        a:visited /*visitado*/{
+            color: rgb(240, 8, 46);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active /*ativo - clicado - qnd vc clica ele fica amarelo*/{
+            color: yellow;
+        }
+
+        a::after /*"depois de todos os links, seriam o 'a' "*/{
+            content: ' ☜'; /*conteúdo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+
+        .especial::before{
+            content: '☞ ';
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.twitch.tv/warwickdecrocs" target="_blank">Live na Twitch</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/videos" target="_blank" class="especial">Curso em vídeo YouTube</a></li>
+        <li><a href="https://www.google.com.br/" target="_blank">Google</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes-Externas</title>
+    <link rel="shortcut icon" href="../IMAGENS/FAVICON-PADRAO-NIKSON.ico" type="image/x-icon">
+
+    <style> 
+        /*importanto fonte pelo fonts.google.com:
+            Vá em 'selecione o estilo' -> depois em '@importar' -> cole após o style do seu code -> pegue o font-family recomendado e cole css
+        */
+
+        /*@import url('https://fonts.googleapis.com/css2? family = Courgette & display = swap');*/
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+        /*Para adicionar uma fonte que você baixou, basta usar o: @font-face*/
+
+        @font-face {
+            font-family: "FonteRomantica"; /*vc decide o título*/
+            src: url("Aula5-Fontes-Baixadas/Filxgirl.TTF") format('truetype'), url("Aula5-Fontes-Baixadas/Filxgirl.OTF") format('opentype')/*-> exemplo de outro formato*/
+            /*nome do arquivo entre aspas
+            
+            format: tipos 
+            - opentype -> para fontes .otf
+            - truetype ->  para fontes .ttf
+            - embedder-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+
+        #importadas{
+            /*font-family: 'Gamja Flower', cursive; /*pegue no site*/
+            font-family: 'Roboto', sans-serif; /*indicado pelo site*/
+            font-size: 3em;
+        }
+
+        /*pode usar o dafont.com.br também -  usado para baixar a fonte*/
+
+        #download{
+            font-family: 'FonteRomantica', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="importadas">Título - fontes importadas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quis fuga veniam aliquid vero praesentium dolorum nesciunt vitae quos suscipit, ex in cum exercitationem laborum quod corrupti, quas voluptatem debitis!</p>
+
+    <hr>
+    <h1 id="download">Título 2 - fontes baixadas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam placeat tenetur eveniet aperiam earum asperiores sequi maiores quaerat ex excepturi doloribus sint debitis, porro laudantium, aliquam recusandae harum suscipit.</p>
+</body>
+</html>
