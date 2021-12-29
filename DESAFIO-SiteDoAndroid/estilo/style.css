@@ -6,7 +6,7 @@
 /*fonte Baixada*/
 @font-face {
     font-family:'Android';
-    src: url('/DESAFIO-SiteDoAndroid/fontes/idroid.otf') format('opentype');
+    src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
