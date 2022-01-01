@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background-Image</title>
+    <title>Teste de imagem de fundo </title>
+    <style>
+
+        body{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            text-align: center;
+            background-image: url("../IMAGENS/wallpaper001.jpg");
+        }
+
+        div.quadrado{
+            display: inline-block; /*para elas ficarem uma do lado da outra*/
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray; 
+            width: 180px;
+            height: 180px;
+        }
+
+        div#q1{/*colocar um background-color normal*/
+            background-color: skyblue;
+        }
+
+        div#q2{/*colcoar um background-image personalizado - degrade */
+            background-image: linear-gradient(to bottom, green, white);
+        }
+
+        div#q3{ /*colocar uma imagem de fundo com background-image*/
+            background-image: url('../IMAGENS/pattern003.png');
+            /*só usar a função: url()*/
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Colocando uma imagem de fundo no site</h1>
+
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
 </body>
 </html>
