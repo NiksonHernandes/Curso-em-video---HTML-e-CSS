@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando o tamanho do fundo</title>
+    <style>
+        body{
+            height: 97vh;
+            border: 1px solid red;
+            background-color: black;
+            background-image: url(../IMAGENS/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;/*configura o tamanho FIXO da imagem de fundo
+            100px 100px -> 100 de largura e 100 de altura
+            TIPOS DE SIZE:
+            auto -> padrão;
+            contain -> faz com que a imagem seja 100% exibida, sem corte, sem expasão, sem nada;
+            cover(cobrir) -> vai cobrir a tela inteira, msm q tenha q picotar a imagem
+
+            */
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto; /*para ficar no meio*/
+            border: 1px solid blue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati praesentium, doloremque neque quisquam in temporibus, quod quibusdam dolorum sequi voluptatum eos quidem ex deserunt sapiente inventore non velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure, iste aspernatur commodi in, quisquam nulla ut molestias eveniet fugiat sint, veniam ullam fugit. Voluptatum a possimus nam nobis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illum fugit eius unde odit sit eligendi consequuntur consectetur dolor, minima dignissimos sed fugiat, dolore quasi vero laboriosam? Odio, corporis earum. </p>
+    </main>
+</body>
+</html>
