@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            border: 1px solid red;
+            background-color: black;
+            background-image: url(../IMAGENS/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;/*attachment -> vínculo
+            Combinando o size: cover com o attachment: fixed, ele não rola a imagem, fica fixa e com 100% da tela ocupada
+            */
+
+            /*SHORTHAND - BACKGROUND, nessa ordem:
+                color -> image -> position -> / -> [size] -> repeat ->  -> attachment
+
+                NÃO ESQUEÇA DA BARRA!!
+            
+            OU SEJA: 
+            
+            background: black url(../IMAGENS/wallpaper002.jpg) center center / cover no-repeat fixed;
+            
+            */
+        }
+
+        main{
+            background-color: white;
+            max-width: 500px;/*pra ajustar sem quebrar o site, menor do que 500px ele quebra o texto*/
+            padding: 10px;
+            margin: auto; /*para ficar no meio*/
+            border: 1px solid blue;
+            border-radius: 15px;
+        }
+
+        main > h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati praesentium, doloremque neque quisquam in temporibus, quod quibusdam dolorum sequi voluptatum eos quidem ex deserunt sapiente inventore non velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure, iste aspernatur commodi in, quisquam nulla ut molestias eveniet fugiat sint, veniam ullam fugit. Voluptatum a possimus nam nobis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illum fugit eius unde odit sit eligendi consequuntur consectetur dolor, minima dignissimos sed fugiat, dolore quasi vero laboriosam? Odio, corporis earum. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati praesentium, doloremque neque quisquam in temporibus, quod quibusdam dolorum sequi voluptatum eos quidem ex deserunt sapiente inventore non velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure, iste aspernatur commodi in, quisquam nulla ut molestias eveniet fugiat sint, veniam ullam fugit. Voluptatum a possimus nam nobis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illum fugit eius unde odit sit eligendi consequuntur consectetur dolor, minima dignissimos sed fugiat, dolore quasi vero laboriosam? Odio, corporis earum. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati praesentium, doloremque neque quisquam in temporibus, quod quibusdam dolorum sequi voluptatum eos quidem ex deserunt sapiente inventore non velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure, iste aspernatur commodi in, quisquam nulla ut molestias eveniet fugiat sint, veniam ullam fugit. Voluptatum a possimus nam nobis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illum fugit eius unde odit sit eligendi consequuntur consectetur dolor, minima dignissimos sed fugiat, dolore quasi vero laboriosam? Odio, corporis earum. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati praesentium, doloremque neque quisquam in temporibus, quod quibusdam dolorum sequi voluptatum eos quidem ex deserunt sapiente inventore non velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iure, iste aspernatur commodi in, quisquam nulla ut molestias eveniet fugiat sint, veniam ullam fugit. Voluptatum a possimus nam nobis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illum fugit eius unde odit sit eligendi consequuntur consectetur dolor, minima dignissimos sed fugiat, dolore quasi vero laboriosam? Odio, corporis earum. </p>
+    </main>
+</body>
+</html>
