@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        section#container{
+            position: relative; 
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url(../IMAGENS/target001.png);
+            background-size: 100% 100%;
+            
+        }
+
+        article#conteudo{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(../IMAGENS/target001.png);
+            background-size: 100% 100%;
+            /*margin: auto; maneira de centralizar na horizontal*/
+
+            left: 50%;
+            top: 50%; 
+
+            transform: translate(-50%, -50%);
+            /*
+            em relação ao left e top definidos anteriormente
+            (20px, 20px) ->  direita e baixo (+ direita e baixo)
+            (-20px, -20px) -> esquerda e cima (- esquerda e cima)
+            */
+        }
+
+        /*Para fazer o alinhamento vertical: 
+        1º Container tem que ter a position: relative (já vem assim por padrão, ent nem precisa definir)
+        2º O conteúdo vai ter um position: absolute (assim qu você coloca o posicionamento absoluto, vc pode configurar o LEFT e o TOP)
+        3º usar a transform: translate(20px, 20px)-> que mexe no componente, pode usar % também (mexer em qualquer caixa aplicando alguma alteração de transformação dela)
+        
+        
+        
+        
+        */
+    </style>
+</head>
+<body>
+    <!-- Quando queremos centralizar blocos horizontalmente, aprendemos a usar o margin:auto; nas folhas de estilo. Mas como fazer a centralização vertical? -->
+    <section id="container">
+        <!--Quando for centralizar verticalmente, vc tem q ter um container e um conteúdo-->
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+    
+</body>
+</html>
